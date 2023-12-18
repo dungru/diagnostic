@@ -26,3 +26,7 @@ make
    7) "args"
    8) (empty array)
 ```
+# Fix your Coding Style
+```
+.ci/check-format.sh
+```

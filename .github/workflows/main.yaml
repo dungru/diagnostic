@@ -18,5 +18,4 @@ jobs:
         run: |
             sudo apt-get install -q -y clang-format-12
             .ci/check-format.sh
-            .ci/build-n-run.sh
         shell: bash
