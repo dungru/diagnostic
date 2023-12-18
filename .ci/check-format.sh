@@ -16,6 +16,7 @@ set -x
 for file in ${SOURCES};
 do
     $CLANG_FORMAT ${file} > expected-format
+    # Modify File directly
     $CLANG_FORMAT -i ${file}
     diff -u -p --label="${file}" --label="expected coding style" ${file} expected-format
 done
